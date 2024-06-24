@@ -1,5 +1,5 @@
 # GameOfLifeShader
-Game of life with (little) game logic written in JavaScript. Drawing nothing but a single Rectangle with JavaScript. The whole graphics part is implemented in the fragment shader. Project to learn about shaders. The downside of this approach is the limited input size of the fragment shader. Therefore, there is an upper limit on active tiles, which is currently at 1000 tiles.
+An implementation of conways Game of Life. The (little) game logic is written in JavaScript. Nothing is drawn with JavaScript except a single Rectangle, representing the background canvas. The whole graphics part is implemented in the fragment shader. This is a small project to learn about shaders. The downside of this approach is the limited input size of the fragment shader. Therefore, there is an upper limit on active tiles, which is currently at 1000 tiles.
 
 # Examples
 
