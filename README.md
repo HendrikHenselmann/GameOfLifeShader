@@ -1,5 +1,8 @@
 # GameOfLifeShader
-An implementation of conways Game of Life. The (little) game logic is written in JavaScript. Nothing is drawn with JavaScript except a single Rectangle, representing the background canvas. The whole graphics part is implemented in the fragment shader. This is a small project to learn about shaders. The downside of this approach is the limited input size of the fragment shader. Therefore, there is an upper limit on active tiles, which is currently at 1000 tiles.
+An implementation of Conways Game of Life. The (little) game logic is written in JavaScript. No graphics object is created with JavaScript except a single Rectangle, representing the background canvas. The whole graphics part is implemented in the fragment shader. This is a small project to learn about shaders. The downside of this approach is the limited input size of the fragment shader. Therefore, there is an upper limit on active tiles, which is currently at 1000 tiles.
+
+# Time Complexity
+The fragment shader calculates the desired color of every pixel of a frame. Therefore the signed distance of a pixel (SDF) to every active game tile is evaluated. Resulting in a time complexity that depends on the size of the browser window's pixels (p) and the number of active game tiles (a): O (p * a).
 
 # Examples
 
