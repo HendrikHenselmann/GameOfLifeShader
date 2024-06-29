@@ -200,7 +200,7 @@ function updateBoardSize ()
 
 function preload() {
     // load in the shader
-    gameShader = loadShader('doNothing.vert', 'canvas.frag');
+    gameShader = loadShader("doNothing.vert", "flashingCircles.frag");
 }
 
 function setup() {
@@ -232,7 +232,6 @@ function setup() {
 }
 
 function draw() {
-    clear();
 
     if (isGameRunning && millis () - lastStepTime >= 1000. / stepsPerSecond)
     {
